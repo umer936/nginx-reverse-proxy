@@ -1,0 +1,20 @@
+services:
+    reverseproxy:
+        image: nginx:alpine
+        ports: [8080:8080,8081:8081,9999:9999,4546:4546,8281:8281,8280:8280,443:443,3000:3000]
+        restart: always
+        volumes:
+            - ./sites-available:/etc/nginx/sites-available:ro
+            - ./sites-available:/etc/nginx/sites-enabled:ro
+            - ./all-redirects:/etc/nginx/all-redirects:ro
+            # comment out these lines if you don't have https certs
+            - ./nginx.conf:/etc/nginx/nginx.conf:ro
+            - /dockerdev/certs:/etc/nginx/certs:ro
+        networks:
+            - reverseproxy-network
+
+networks:
+    reverseproxy-network:
+        name: reverseproxy
+        driver: bridge 
+
