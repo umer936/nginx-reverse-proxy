@@ -110,7 +110,7 @@ docker network inspect reverseproxy
 Issues it solves:
 https://stackoverflow.com/questions/44656188/implementing-reverse-proxy-with-nginx-and-docker-containers-with-different-ports
 https://www.reddit.com/r/docker/comments/xxhxzr/comment/ircl2m5/
-
+https://www.reddit.com/r/nginxproxymanager/comments/10mt5qc/config_help_custom_locations/
 
 
 
