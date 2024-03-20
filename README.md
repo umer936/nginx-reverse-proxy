@@ -1,3 +1,15 @@
+# ARCHIVED
+
+
+# JUST USE https://cosmos-cloud.io/ INSTEAD. 
+
+1. Don't include ports in the containers
+2. ServApps > New URL > Use Host > **can do [url]:[port #]!!**
+
+
+----------
+# Historical
+
 ## 1) 
 Add to docker-compose of the services you want reverse-proxied:
 
